@@ -16,10 +16,19 @@ class DataHistory{
     static var items = "筷子 湯匙 碗筷"
     static var points = "300"
     static var decrease = "3.27"
-    static var money=10
+    static var money = 10
+    static var time:String = ""
     
     
-   
     
+    static func geTime()->String{
+        let currentDateTime=Date()
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .none
+        return formatter.string(from:currentDateTime)
+    }
+    
+
     
 }

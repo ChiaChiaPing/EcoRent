@@ -5,6 +5,7 @@ struct State {
     let name: String
     let long: CLLocationDegrees
     let lat: CLLocationDegrees
+    let status:String
 }
 
 class MController: UIViewController {
@@ -12,11 +13,11 @@ class MController: UIViewController {
     // You don't need to modify the default init(nibName:bundle:) method.
     var markerDict: [String: GMSMarker] = [:]
     let states = [
-        State(name: "Taipei digiBlock", long: 121.520193, lat: 25.074576),
-        State(name: "圓山捷運站", long: 121.5199165, lat: 25.071381),
-        State(name: "大龍街夜市", long: 121.5170775, lat: 25.0720793),
-        State(name: "大同老街", long: 121.5157257, lat: 25.0724235),
-        State(name: "花博公園", long: 121.5204228, lat: 25.0699473)
+        State(name: "Taipei digiBlock", long: 121.520193, lat: 25.074576,status:"可租借20個\n可歸還50個"),
+        State(name: "圓山捷運站", long: 121.5199165, lat: 25.071381,status:"可租借30個\n可歸還27個"),
+        State(name: "大龍街夜市", long: 121.5170775, lat: 25.0720793,status:"可租借2個\n可歸還68個"),
+        State(name: "大同老街", long: 121.5157257, lat: 25.0724235,status:"可租借40個\n可歸還30個"),
+        State(name: "花博公園", long: 121.5204228, lat: 25.0699473,status:"可租借60個\n可歸還10個")
     ]
 
     override func loadView() {
@@ -31,7 +32,7 @@ class MController: UIViewController {
             let state_marker = GMSMarker()
             state_marker.position = CLLocationCoordinate2D(latitude: state.lat, longitude: state.long)
             state_marker.title = state.name
-            state_marker.snippet = "環保租賃機在這裡！"
+            state_marker.snippet = state.status
             state_marker.map = mapView
         }
         

@@ -31,10 +31,10 @@ class HistController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timesLabel.text=DataHistory.times
-        itemsLabel.text=DataHistory.items
-        pointsLabel.text=DataHistory.points
-        garbageLabel.text=DataHistory.decrease
+        //timesLabel.text=DataHistory.times
+        //itemsLabel.text=DataHistory.items
+        //pointsLabel.text=DataHistory.points
+        //garbageLabel.text=DataHistory.decrease
         self.title = "個人使用紀錄"
         
     }

@@ -21,6 +21,7 @@
 		42CC350D2098992000F8DE1C /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC350C2098992000F8DE1C /* MapController.swift */; };
 		42CC350F2098A0F700F8DE1C /* ReturnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC350E2098A0F700F8DE1C /* ReturnController.swift */; };
 		42CC35112098C67700F8DE1C /* SingleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC35102098C67700F8DE1C /* SingleMapController.swift */; };
+		42D1586D209E10E50041D649 /* TTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1586C209E10E50041D649 /* TTController.swift */; };
 		7D395CF343E608757FBAC97B /* Pods_EcoRent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843767D9A643E5B08803A5AE /* Pods_EcoRent.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		42CC350C2098992000F8DE1C /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		42CC350E2098A0F700F8DE1C /* ReturnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnController.swift; sourceTree = "<group>"; };
 		42CC35102098C67700F8DE1C /* SingleMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMapController.swift; sourceTree = "<group>"; };
+		42D1586C209E10E50041D649 /* TTController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTController.swift; sourceTree = "<group>"; };
 		843767D9A643E5B08803A5AE /* Pods_EcoRent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoRent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF068D75570742D70761D2C8 /* Pods-EcoRent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoRent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent.debug.xcconfig"; sourceTree = "<group>"; };
 		C6D1020FD2B937C8E503497B /* Pods-EcoRent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoRent.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				4224A507209C9E870051A32E /* PointController.swift */,
 				4224A50D209CB1200051A32E /* HistController.swift */,
 				4224A52F209D73D10051A32E /* MController.swift */,
+				42D1586C209E10E50041D649 /* TTController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				42CC35112098C67700F8DE1C /* SingleMapController.swift in Sources */,
 				4224A50A209CAE2D0051A32E /* DataHistory.swift in Sources */,
 				4224A508209C9E870051A32E /* PointController.swift in Sources */,
+				42D1586D209E10E50041D649 /* TTController.swift in Sources */,
 				42CC34EF2098898B00F8DE1C /* AppDelegate.swift in Sources */,
 				4224A530209D73D10051A32E /* MController.swift in Sources */,
 			);

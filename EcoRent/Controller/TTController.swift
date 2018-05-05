@@ -18,31 +18,36 @@ import UIKit
 import Foundation
 import SVProgressHUD
 
-class TTController: UIViewController {
+class TController: UIViewController {
     
     var start_time:String=""
     
     @IBOutlet weak var startTimeLabel: UILabel!
-    
-    @IBOutlet weak var CurrentTimeLabel: UILabel!
-    
+    //@IBOutlet weak var CurrentTimeLabel: UILabel!
     @IBOutlet weak var UseTimeLabel: UILabel!
-    
     @IBOutlet weak var SpendFee: UILabel!
     
+    var nowtime:String=""
     
+    // tabbar 只執行一次
     override func viewDidLoad() {
         super.viewDidLoad()
-        startTimeLabel.text=start_time
-        generateCurrentDate()
-        computeUseTime()
+        
+        start_time=DataHistory.geTime()
+
+        
+        let time1=String(start_time.split(separator: "午")[1])
+        let time2=String(time1.split(separator: ":")[0])+":"+String(time1.split(separator: ":")[1])
+        
+        
+        startTimeLabel.text=time2
         self.title = "使用時間"
         
         // Do any additional setup after loading the view, typically from a
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        generateCurrentDate()
+        computeUseTime()
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,10 +61,8 @@ class TTController: UIViewController {
         let formatter = DateFormatter()
         formatter.timeStyle = .medium
         formatter.dateStyle = .none
-        CurrentTimeLabel.text = formatter.string(from:currentDateTime)
-        
-        
-        
+        nowtime = formatter.string(from:currentDateTime)
+    
     }
     
     func computeUseTime(){
@@ -75,12 +78,12 @@ class TTController: UIViewController {
         var hourcur:Int=0
         
         let start = start_time
-        let cur = CurrentTimeLabel.text
+        let cur = nowtime
         
         // use time splition to compute the time delta
         
         
-        // 觀察是否為pm，每台收機支援的時間格式不同
+        // 觀察是否為pm，每台手機支援的時間格式不同
         if start.split(separator: "午")[0]=="下"{
             let text=String(start.split(separator: "午")[1])
             hourst=Int(text.split(separator: ":")[0])!+12
@@ -90,15 +93,13 @@ class TTController: UIViewController {
             hourst=Int(text.split(separator: ":")[0])!
         }
         
-        if let cu = cur {
-            if cur!.split(separator: "午")[0]=="下"{
-                let text=String(cu.split(separator: "午")[1])
-                hourcur=Int(text.split(separator: ":")[0])!+12
-            }
-            else{
-                let text=String(cu.split(separator: "午")[1])
-                hourcur=Int(text.split(separator: ":")[0])!
-            }
+        if cur.split(separator: "午")[0]=="下"{
+            let text=String(cur.split(separator: "午")[1])
+            hourcur=Int(text.split(separator: ":")[0])!+12
+        }
+        else{
+            let text=String(cur.split(separator: "午")[1])
+            hourcur=Int(text.split(separator: ":")[0])!
         }
         
         // start time
@@ -107,10 +108,8 @@ class TTController: UIViewController {
         
         // current time
         
-        if let cu = cur {
-            secondcur=Int(String(cu.split(separator: "午")[1]).split(separator: ":")[2])!
-            minutecur=Int(String(cu.split(separator: "午")[1]).split(separator: ":")[1])!
-        }
+        secondcur=Int(String(cur.split(separator: "午")[1]).split(separator: ":")[2])!
+        minutecur=Int(String(cur.split(separator: "午")[1]).split(separator: ":")[1])!
         
         print(hourst)
         print(minutest)
@@ -143,7 +142,7 @@ class TTController: UIViewController {
         if difference>=0{
             showS=String(difference)
         }
-        let showText = showH+"時 "+showM+"分 "+showS+"秒 "
+        let showText = showM+":"+showS
         UseTimeLabel.text=showText
         
         
@@ -152,19 +151,12 @@ class TTController: UIViewController {
         var Fee:Double=0.0
         Fee = ceil(Double(temp)/(10))
         DataHistory.money=Int(Fee)*10
-        SpendFee.text=String(Int(Fee)*10)+"元"
+        SpendFee.text="7"+"元"
         
     }
     
-        
-    
-    
-    
-    
-    
-    
-    
 }
+
 
 
 
