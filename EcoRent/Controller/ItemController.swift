@@ -49,7 +49,7 @@ class ItemController: UIViewController {
         if(scan){
             // 營造搜尋的時間
             var count=0
-            while(count<=1000000000){
+            while(count<=1000){
                 count+=1
             }
           

@@ -11,6 +11,7 @@
 		4224A508209C9E870051A32E /* PointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224A507209C9E870051A32E /* PointController.swift */; };
 		4224A50A209CAE2D0051A32E /* DataHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224A509209CAE2D0051A32E /* DataHistory.swift */; };
 		4224A50E209CB1200051A32E /* HistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224A50D209CB1200051A32E /* HistController.swift */; };
+		4224A530209D73D10051A32E /* MController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224A52F209D73D10051A32E /* MController.swift */; };
 		42CC34EF2098898B00F8DE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC34EE2098898B00F8DE1C /* AppDelegate.swift */; };
 		42CC34F12098898B00F8DE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC34F02098898B00F8DE1C /* ViewController.swift */; };
 		42CC34F42098898B00F8DE1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42CC34F22098898B00F8DE1C /* Main.storyboard */; };
@@ -20,15 +21,15 @@
 		42CC350D2098992000F8DE1C /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC350C2098992000F8DE1C /* MapController.swift */; };
 		42CC350F2098A0F700F8DE1C /* ReturnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC350E2098A0F700F8DE1C /* ReturnController.swift */; };
 		42CC35112098C67700F8DE1C /* SingleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC35102098C67700F8DE1C /* SingleMapController.swift */; };
-		6DA7C6D155B22A715F703EE8 /* Pods_EcoRent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117290032021CC5A43296BC1 /* Pods_EcoRent.framework */; };
+		7D395CF343E608757FBAC97B /* Pods_EcoRent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843767D9A643E5B08803A5AE /* Pods_EcoRent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		117290032021CC5A43296BC1 /* Pods_EcoRent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoRent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421240A02099E26B002D5162 /* TController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TController.swift; sourceTree = "<group>"; };
 		4224A507209C9E870051A32E /* PointController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointController.swift; sourceTree = "<group>"; };
 		4224A509209CAE2D0051A32E /* DataHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHistory.swift; sourceTree = "<group>"; };
 		4224A50D209CB1200051A32E /* HistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistController.swift; sourceTree = "<group>"; };
+		4224A52F209D73D10051A32E /* MController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MController.swift; sourceTree = "<group>"; };
 		42CC34EB2098898B00F8DE1C /* EcoRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CC34EE2098898B00F8DE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42CC34F02098898B00F8DE1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		42CC350C2098992000F8DE1C /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		42CC350E2098A0F700F8DE1C /* ReturnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnController.swift; sourceTree = "<group>"; };
 		42CC35102098C67700F8DE1C /* SingleMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMapController.swift; sourceTree = "<group>"; };
+		843767D9A643E5B08803A5AE /* Pods_EcoRent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoRent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF068D75570742D70761D2C8 /* Pods-EcoRent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoRent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent.debug.xcconfig"; sourceTree = "<group>"; };
 		C6D1020FD2B937C8E503497B /* Pods-EcoRent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoRent.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA7C6D155B22A715F703EE8 /* Pods_EcoRent.framework in Frameworks */,
+				7D395CF343E608757FBAC97B /* Pods_EcoRent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +109,7 @@
 				421240A02099E26B002D5162 /* TController.swift */,
 				4224A507209C9E870051A32E /* PointController.swift */,
 				4224A50D209CB1200051A32E /* HistController.swift */,
+				4224A52F209D73D10051A32E /* MController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,7 +134,7 @@
 		FD8C70A596568BD631040E9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				117290032021CC5A43296BC1 /* Pods_EcoRent.framework */,
+				843767D9A643E5B08803A5AE /* Pods_EcoRent.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,8 +150,8 @@
 				42CC34E72098898B00F8DE1C /* Sources */,
 				42CC34E82098898B00F8DE1C /* Frameworks */,
 				42CC34E92098898B00F8DE1C /* Resources */,
-				8E30C4450B82334B7ADEFF9B /* [CP] Embed Pods Frameworks */,
-				57A7D467345613204C5F26C1 /* [CP] Copy Pods Resources */,
+				4B7CBA5B88B2EC9F87F93493 /* [CP] Embed Pods Frameworks */,
+				E0B46CFFDFCF28D467723C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,22 +210,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57A7D467345613204C5F26C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E30C4450B82334B7ADEFF9B /* [CP] Embed Pods Frameworks */ = {
+		4B7CBA5B88B2EC9F87F93493 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,6 +250,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E0B46CFFDFCF28D467723C10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EcoRent/Pods-EcoRent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -279,6 +287,7 @@
 				4224A50A209CAE2D0051A32E /* DataHistory.swift in Sources */,
 				4224A508209C9E870051A32E /* PointController.swift in Sources */,
 				42CC34EF2098898B00F8DE1C /* AppDelegate.swift in Sources */,
+				4224A530209D73D10051A32E /* MController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +429,7 @@
 				DEVELOPMENT_TEAM = NHB47L8XJ2;
 				INFOPLIST_FILE = EcoRent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchiaq.EcoRent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchiach.EcoRent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,7 +445,7 @@
 				DEVELOPMENT_TEAM = NHB47L8XJ2;
 				INFOPLIST_FILE = EcoRent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchiaq.EcoRent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinchiach.EcoRent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
